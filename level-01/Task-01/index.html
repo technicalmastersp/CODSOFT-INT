@@ -6,56 +6,71 @@
     <title>Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="input.css">
+    <style>
+        @media (min-width: 768px) {
+            #responsive{
+                font-size: 20px;
+
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <section class="nav text-xs text-white">
-            <div class="bg-white  z-15 flex text-black px-3 py-2 justify-center">
-                <div class="flex text-xs font-bold">
-                    <img src="assets/code-logo.svg" alt="">
+            <div class="bg-white z-15 flex text-black px-3 py-2 justify-center">
+                <div class="flex text-xs font-bold lg:text-2xl">
+                    <img class="lg:w-7 lg:pr-2" src="assets/code-logo.svg" alt="">
                     <h1>Technical Master SP</h1>
                 </div>
             </div>
             <div class="bg-transparent flex">
                 <!-- <div></div> -->
-                <nav class="w-full"><ul class="flex sticky z-10 px-3 gap-1 text-white align-item-end justify-between w-full">
-                    <li><a class="shadow hover:shadow-red-900 pointer" href="#">Home</a></li>
-                    <li><a class="shadow hover:shadow-red-900 pointer" href="#">Services</a></li>
-                    <li><a class="shadow hover:shadow-red-900 pointer" href="#">Products</a></li>
-                    <li><a class="shadow hover:shadow-red-900 pointer" href="#">About Us</a></li>
-                    <li><a class="shadow hover:drop-shadow-md pointer" href="#">Contact</a></li>
+                <nav class="w-full"><ul class="flex sticky z-10 px-3 gap-1 text-white justify-between w-full lg:text-2xl xl:px-5 xl:mt-1">
+                    <li><a class="shadow active:text-yellow-500 hover:text-green-500 pointer" href="#">Home</a></li>
+                    <li><a class="shadow active:text-yellow-500 hover:text-green-500 pointer" href="#">Services</a></li>
+                    <li><a class="shadow active:text-yellow-500 hover:text-green-500 pointer" href="#">Products</a></li>
+                    <li><a class="shadow active:text-yellow-500 hover:text-green-500 pointer" href="#">About Us</a></li>
+                    <li><a class="shadow active:text-yellow-500 hover:text-green-500 pointer" href="#">Contact</a></li>
                 </ul></nav>
             </div>
         </section>
     </header>
     <main>
-        <section class="">
-            <img class="relative bottom-5 z-1 " src="assets/main-section.jpg" alt="codingImage">
-            <div class="text-center font-bold text-2xl pb-5 text-pink-500"><h2>Welcome my site...</h2></div>
-            <h2 class="text-center font-bold text-sm pt-4 pb-2">Join Me</h2>
-            <div class="Products px-3">
-                <div class="flex">
-                    <div class="items w-1/2">
-                        <img src="assets/products.png" class="h-36 right" alt="items">
+        <img class="relative bottom-5 z-1 h-[15rem] w-full sm:h-[22rem] md:h-[25rem] lg:h-[28rem] lg:bottom-8  xl:h-[30rem] 2xl:h-[35rem]" src="assets/main-section.jpg" alt="codingImage">
+        <div class="text-center font-bold text-xl pb-5 text-pink-500 lg:text-4xl lg:my-5"><h2>Welcome my Landing Page site...</h2></div>
+        <section class="flex justify-center align-center w-full" id="responsive">
+            <div class="hidden sm:block sm:w-40 mx-20 my-5 px-3 h-[25rem] border-solid border-2 border-sky-500 rounded-lg lg:w-56 lg:h-[25.5rem]"><h1 class="text-xl font-bold text-center py-2 lg:text-2xl">About Page</h1><p class="text-xs text-center lg:text-xl">Welcome to My this Internship Project... <br/><br/>Hello and thank you for visiting my landing page it is my First task of Level 01. <br/><br/>Feel Free to Check my all task... <div class="text-center my-5"><a class="py-1 px-3 border-solid border-2 border-yellow-500 rounded-lg" href="../../index.html" target="_blank"><button>Click Me</button></a></div></p></div>
+            <div class="w-[20rem] md:w-[26rem] lg:w-[36rem]">
+                <h2 class="text-center font-bold text-sm pt-4 pb-2 md:text-xl lg:text-2xl">Join Me</h2>
+                <div class="Products px-3">
+                    <div class="flex">
+                        <div class="items w-1/2">
+                            <img src="assets/products.png" class="h-36 lg:h-[18rem]" alt="items">
+                        </div>
+                        <div class="details w-1/2 px-3 py-3 font-serif">Join me and let's go for make sume creative and something new... <br/><br/> Feel free to connect with me<div class="text-center my-5"><a class="py-1 px-3 border-solid border-2 border-yellow-500 rounded-lg" href="https://www.linkedin.com/in/technicalmastersp/" target="_blank"><button>Connect with Me</button></a></div></div>              
                     </div>
-                    <div class="details w-1/2 px-3 py-3 font-serif">Join me and let's go for make sume creative and something new...</div>              
-                </div>
-                <h2 class="text-center font-bold text-sm pt-9 pb-2">Developed By Me</h2>
-                <div class="flex">
-                    <div class="details w-1/2 px-3 py-3 font-serif">This project is developed by <span><a href="https://linkedin.com/in/technicalmastersp">@technicalmastersp.</a></span></div>              
-                    <div class="items w-1/2">
-                        <img src="assets/item-1.png" alt="items">
+                    <hr class="mt-5" />
+                    <h2 class="text-center font-bold text-sm pt-9 pb-2 md:text-xl lg:text-2xl">Developed By Me</h2>
+                    <div class="flex">
+                        <div class="details w-1/2 px-3 py-3 font-serif">This project is developed by <span><a href="https://linkedin.com/in/technicalmastersp">@technicalmastersp</a></span>.<br/><br/> Feel free to see main page of this project.<div class="text-center my-5"><a class="py-1 px-3 border-solid border-2 border-yellow-500 rounded-lg" href="https://technicalmastersp.github.io/h-Calculator/" target="_blank"><button>Let's go to Main Project</button></a></div></div>              
+                        <div class="items w-1/2">
+                            <img src="assets/item-1.png" class="h-[15rem] lg:h-[25rem]" alt="items">
+                        </div>
                     </div>
-                </div>
-                <h2 class="text-center font-bold text-sm pt-9 pb-2">Developed By Me</h2>
-                <div class="flex">
-                    <div class="items w-1/2">
-                        <img src="assets/item-1.png" alt="items">
-                    </div>
-                    <div class="details w-1/2 px-3 py-3 font-serif">This project is developed by <span><a href="https://linkedin.com/in/technicalmastersp">@technicalmastersp.</a></span></div>              
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section class="footer">
+            <div class="div">
+                <div class="bg-black flex center text-[12px] py-2 text-white">
+                    <div class="mx-auto lg:text-xl">Thank you so much for Visiting</div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
+
