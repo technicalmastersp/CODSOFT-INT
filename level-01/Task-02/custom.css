@@ -1,3 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"); /* For Normal : font-family: "Dancing Script", "Caveat", "Edu VIC WA NT Beginner", cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Grey+Qo&family=Qwitcher+Grypen:wght@400;700&family=Zeyada&display=swap"); /* For Styling : font-family: "Dancing Script", "Caveat", "Zeyada", "Great Vibes", "Grey Qo", "Qwitcher Grypen"; */
 @import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Macondo&display=swap"); /* For Gif : font-family:  */
+
+
+
+/* *********************************************   header section  ********************************************** */
+
+.sp-style-font{
+    font-family: "Dancing Script", "Caveat", "Zeyada", "Great Vibes", "Grey Qo", "Qwitcher Grypen";
+}
+
+
+/* *********************************************   main section   ********************************************* */
+
+
+/* ---------------------------------------   hand animation   --------------------------------------- */
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.1s; 
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
