@@ -11,11 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-300">
-    <div class="fixed right-4 bottom-4"><a href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a></div>
+    <div class="fixed right-4 bottom-4 text-xl md:text-2xl text-violet-800"><a href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a></div>
     <header>
         <section id="header">
-            <div class="flex justify-between items-center px-3 py-4 sm:text-xs font-bold fixed w-full w-16 bg-slate-300">
-                <div><a class="sp-style-font text-cyan-800 text-sm"><i class="bi bi-code-slash"></i> Technical Master SP</a></div>
+            <div class="flex justify-between items-center px-3 py-4 sm:text-xs font-bold fixed w-full bg-slate-300 z-10 lg:text-sm xl:text-xl">
+                <div><a class="sp-style-font text-cyan-800 text-sm lg:text-base xl:text-2xl"><i class="bi bi-code-slash"></i> Technical Master SP</a></div>
                 <div class="text-cyan-800 sm:hidden flex items-center justify-center">
                     <span id="spBtn" class="material-symbols-outlined spBtn">menu</span>
                     <!-- <span class="material-symbols-outlined">menu</span> -->
@@ -23,59 +23,73 @@
                 </div>
                 <div class="max-sm:hidden">
                     <nav>
-                        <ul class=" flex sm:gap-4">
-                            <li><a class="cursor-pointer hover:text-blue-700" href="#">Skills</a></li>
+                        <ul class=" flex sm:gap-4 xl:gap-7">
+                            <li><a class="cursor-pointer hover:text-blue-700" href="#my-work-sec">My Work</a></li>
+                            <li><a class="cursor-pointer hover:text-blue-700" href="#project-sec">Projects</a></li>
+                            <li><a class="cursor-pointer hover:text-blue-700" href="#skills-sec">Skills</a></li>
                             <li><a class="cursor-pointer hover:text-blue-700" href="#">Open Source</a></li>
-                            <li><a class="cursor-pointer hover:text-blue-700" href="#">Project</a></li>
                             <li><a class="cursor-pointer hover:text-blue-700" href="#">Achievements</a></li>
-                            <li><a class="cursor-pointer hover:text-blue-700" href="#">Talks</a></li>
                             <li><a class="cursor-pointer hover:text-blue-700" href="#">Contact Me</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </section>
+        <section hidden class="sm:hidden fixed mx-auto top-12 py-5 bg-slate-600 w-full z-10 border-b-2 border-solid border-blue-800">
+            <div>
+                <nav>
+                    <ul class="flex flex-col text-center gap-6">
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#my-work-sec">My Work</a></li>
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#project-sec">Projects</a></li>
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#skills-sec">Skills</a></li>
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#">Open Source</a></li>
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#">Achievements</a></li>
+                        <li><a class="cursor-pointer hover:text-blue-700" href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
     </header>
     <main">
         <section class="about-sec px-6 select-none">
-           <div class="flex max-sm:flex-col justify-center items-center sm:h-[35rem]">
-               <div class="font-bold text-left text-4xl sm:min-h-80">
+           <div class="flex max-sm:flex-col justify-center items-center sm:h-[35rem] lg:h-[45rem] xl:h-[52rem]">
+               <div class="font-bold text-left text-4xl sm:min-h-80 lg:text-5xl">
                     <h1 class="pt-28 pb-7">Hi All! <span class="wave" role="img" aria-labelledby="wave">👋🏻</span></h1>
                     <h1 class="pb-20">I'm Shashank S. Pandey</h1>
                 </div>
-               <div><img class="max-h-96" src="assets/media/home-about-sec.svg" alt=""></div>
+               <div><img class="max-h-96 lg:max-h-[35rem]" src="assets/media/home-about-sec.svg" alt=""></div>
            </div>
         </section>
-        <section class="my-work-sec px-6 select-none">
-            <h2 class="text-center pt-14 pb-10 font-bold text-4xl">My work</h2>
+        <section id="my-work-sec" class="px-6 select-none">
+            <h2 class="text-center pt-14 pb-10 font-bold text-4xl lg:text-5xl lg:pb-20">My work</h2>
             <div class="flex max-sm:flex-col sm:flex-row justify-center items-center">
-                <div class="sm:w-1/2"><img class="max-h-80 translate" src="assets/media/work.png" alt="img"></div>
-                <div class="sm:w-1/2 sm:text-[1.1rem] sm:pl-4 max-[520px]:text-[1.3rem] text-[1.7rem] pt-7 text-gray-600"><p>I'm passionate to Web Developer with a strong foundation in web development technologies. Skilled software developer with expertise in building web applications using HTML5, CSS, JavaScript, Node.js, MySQL and etc. </p><p> Dedicated to creating user-friendly and efficient software solutions. Passionate about problem-solving and staying updated with the latest technologies.</p></div>
+                <div class="sm:w-1/2 md:flex md:justify-center"><img class="max-md:max-h-80 translate lg:h-[25rem]" src="assets/media/work.png" alt="img"></div>
+                <div class="sm:w-1/2 sm:text-[1.1rem] sm:pl-4 max-[520px]:text-[1.3rem] pt-7 text-gray-600 md:text-[1.35rem] lg:text-[1.57rem] xl:text-[1.75rem]"><p>I'm passionate to Web Developer with a strong foundation in web development technologies. Skilled software developer with expertise in building web applications using HTML5, CSS, JavaScript, Node.js, MySQL and etc. </p><p> Dedicated to creating user-friendly and efficient software solutions. Passionate about problem-solving and staying updated with the latest technologies.</p></div>
             </div>
         </section>
-        <section class="project-sec px-6 select-none">
-            <h2 class="text-center pt-16 pb-8 font-bold text-4xl">Projects</h2>
+        <section id="project-sec" class="px-6 select-none">
+            <h2 class="text-center pt-16 pb-8 font-bold text-4xl lg:text-5xl lg:pb-20 lg:pt-32">Projects</h2>
             <div class="flex max-sm:flex-col sm:flex-row justify-center items-center">
                 <div class="max-[520px]:text-[1.3rem] text-[1.7rem] pt-5 pb-7 text-gray-600 grid sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2">
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Chrome Extention</h3>
                         <p></p>
                         <img src="assets/media/project-Images/abc.jpg" alt="chrome-extention">
                         <div class="text-center my-3"><a class="border-2 border-cyan-700 rounded-lg" href="#"><button class="py-1 px-2">Click Me</button></a></div>
                     </div>
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Calculator</h3>
                         <p></p>
                         <img src="assets/media/project-Images/calculator.png" alt="calculator">
                         <div class="text-center my-3"><a class="border-2 border-cyan-700 rounded-lg" href="https://technicalmastersp.github.io/h-Calculator/"><button class="py-1 px-2">Click Me</button></a></div>
                     </div>
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Video Player 4x</h3>
                         <p></p>
                         <img src="assets/media/project-Images/video-player-4x.png" alt="video-player-4x">
                         <div class="text-center my-3"><a class="border-2 border-cyan-700 rounded-lg" href="https://technicalmastersp.github.io/h-Video_Player_4x/"><button class="py-1 px-2">Click Me</button></a></div>
                     </div>
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Website Clone</h3>
                         <p></p>
                         <div class="grid grid-cols-2 grid-rows-2 gap-1">
@@ -86,13 +100,13 @@
                         </div>
                         <div class="text-center my-3"><a class="border-2 border-cyan-700 rounded-lg" href="https://technicalmastersp.github.io/Website-Clones/"><button class="py-1 px-2">Click Me</button></a></div>
                     </div>
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Love Calculator</h3>
                         <p></p>
                         <img src="assets/media/project-Images/love-calculator.png" alt="love-calculator">
                         <div class="text-center my-3"><a class="border-2 border-cyan-700 rounded-lg" href="https://technicalmastersp.github.io/h-Love_Calculator/"><button class="py-1 px-2">Click Me</button></a></div>
                     </div>
-                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96">
+                    <div class="mb-5 px-4 bg-violet-200 border-4 border-cyan-700 rounded-md max-w-96 min-h-64 flex flex-col justify-between">
                         <h3 class="text-xl font-bold text-cyan-600 py-5 text-center">Resume Project</h3>
                         <p></p>
                         <img src="assets/media/project-Images/resum-project.png" alt="resume-project">
@@ -102,11 +116,11 @@
                 <!-- <div><img class="max-h-80 translate" src="assets/media/projects-1.png" alt="img"></div> -->
             </div>
         </section>
-        <section class="skills-sec px-6">
-            <h2 class="text-center pt-16 pb-8 font-bold text-4xl">Skills</h2>
+        <section id="skills-sec" class="px-6 select-none">
+            <h2 class="text-center pt-16 pb-8 font-bold text-4xl lg:text-5xl lg:pb-20 lg:pt-32">Skills</h2>
             <div class="flex max-sm:flex-col sm:flex-row justify-center items-center">
-                <div><img class="max-h-80 translate" src="assets/media/skills.png" alt="img"></div>
-                <div class="max-[520px]:text-[1.3rem] text-[1.7rem] pt-5 pb-7 text-gray-600">
+                <div class="sm:w-3/5 md:flex md:justify-center"><img class="max-sm:max-h-80  translate md:max-h-96 pb-6 lg:min-h-[35rem]" src="assets/media/skills-1.png" alt="img"></div>
+                <div class="max-[520px]:text-[1.3rem] max-sm:text-[1.7rem] sm:w-2/5 pt-5 pb-7 sm:flex sm:justify-center text-gray-600 lg:text-3xl">
                     <ul class="list-disc">
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -129,7 +143,7 @@
         <section hidden class="open-source-sec px-6"></section>
         <section class="achievements-sec px-6"></section>
         <section class="talks-sec px-6"></section>
-        <section class="contact-me-sec px-6"></section>
+        <section class="contact-me-sec px-6 mb-52"></section>
 
 
     </main>
