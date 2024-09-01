@@ -1,8 +1,16 @@
-// alert("Hii...")
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   call elements   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// let menuTab = document.querySelector('.material-symbols-outlined').innerText
-// let menuTabT = document.querySelector('.material-symbols-outlined').innerText
+const menuTab = document.querySelector('.spBtn')
+const navBar = document.getElementById('hNavBar')
 
-// console.log(menuTab)
-// console.log("hello")
-// console.log(menuTabT)
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   using call elements and apply event for navbar hide & unhide   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const hide = menuTab.addEventListener("click", function() {
+    if(menuTab.innerHTML === 'menu'){
+        menuTab.innerHTML = 'close';
+        navBar.style.display = 'inline'
+    } else if(menuTab.innerHTML === 'close' ) {
+        menuTab.innerHTML = 'menu';
+        navBar.style.display = 'none'
+    }
+})
