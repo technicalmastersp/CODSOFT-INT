@@ -9,12 +9,12 @@
 @mixin gridBox{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
 }
 
-@mixin  h-w-full{
-    height: 100%;
-    width: 100%;
+@mixin  height-width($height,$width){
+    height: $height;
+    width: $width;
 }

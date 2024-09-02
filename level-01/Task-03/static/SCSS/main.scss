@@ -10,40 +10,69 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  main style property  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .container{
-    height: 100vh;
-    width: 100vw;
+    @include height-width(100vh,100vw);
     @include flexBox(column);
 }
 .openContainer{
     @include flexBox(column);
-
+    
     h1{
-        color: red;
+        color: $heding-color;
         font-size: 2.8rem;
         padding-bottom: 2rem;
     }
 }
 .calculator{
-    background-color: $light-color;
-    height: 20rem;
-    width: 20rem;
+    background-color: $calculator-body-color;
+    @include height-width(30rem,20rem);
+    @include flexBox(column);
+    row-gap: 1rem;
+    border-radius: 1rem;
     
     .display{
-        height: 20%;
-        width: 100%;
-
+        @include height-width(20%,91%);
+        padding: 1rem 0 0 0;
+        
         input{
-            width: 100%;
-            height: 100%
+            @include height-width(100%,100%);
+            border-radius: 1rem;
+            border-color: transparent;
+            font-size: $btn-text-size;
+            padding: .2rem .5rem;
         }
     }
-
+    
     .keyboard{
         @include gridBox;
-        @include h-w-full;
+        @include height-width(80%,100%);
+        padding: 0 0 1rem 0 ;
         
         div{
+            background-color: $button-bg-color;
+            @include flexBox(column);
+            @include height-width(3rem,3rem);
             font-size: $btn-text-size;
+            font-weight: 600;
+            color: $button-color;
+            border-radius: 1rem;
+        }
+        .div1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            @include height-width(3rem,78%);
+            background-color: $equal-btn-bg-color;
+        }
+        .div2{
+            grid-column: 3/5;
+            grid-row: 1/2;
+            @include height-width(3rem,78%);
+            background-color: $equal-btn-bg-color;
+        }
+        .div19{
+            grid-column: 1/5;
+            grid-row: 6/7;
+            @include height-width(3rem,91%);
+            background-color: $equal-btn-bg-color;
         }
     }
 }
