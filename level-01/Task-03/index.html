@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator | Technical Master SP</title>
     <link rel="stylesheet" href="static/SCSS/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -12,35 +13,32 @@
             <div class="openContainer">
                 <h1>Calculator</h1>
                 <div class="calculator">
-                    <div class="display"><input type="text" placeholder="0" maxlength="14"></div>
+                    <div class="display"><input id="display" type="text" placeholder="0" maxlength="10" readonly></div>
                     <div class="keyboard">
-                        <div class="button div1">Ac</div>
-                        <div class="button div2">Clear</div>
-                        <div class="button div3">1</div>
-                        <div class="button div4">2</div>
-                        <div class="button div5">3</div>
-                        <div class="button div6">/</div>
-                        <div class="button div7">4</div>
-                        <div class="button div8">5</div>
-                        <div class="button div9">6</div>
-                        <div class="button div10">x</div>
-                        <div class="button div11">7</div>
-                        <div class="button div12">8</div>
-                        <div class="button div13">9</div>
-                        <div class="button div14">-</div>
-                        <div class="button div15">0</div>
-                        <div class="button div16">00</div>
-                        <div class="button div17">.</div>
-                        <div class="button div18">+</div>
-                        <div class="button div19">=</div>
+                        <div class="button div1" onclick="clearDisplay()">Ac</div>
+                        <div class="button div2" onclick="backspace()"><i class="material-icons">backspace</i></div>
+                        <div class="button div3" onclick="sendValue('1')">1</div>
+                        <div class="button div4" onclick="sendValue('2')">2</div>
+                        <div class="button div5" onclick="sendValue('3')">3</div>
+                        <div class="button div6" onclick="sendValue('/')">/</div>
+                        <div class="button div7" onclick="sendValue('4')">4</div>
+                        <div class="button div8" onclick="sendValue('5')">5</div>
+                        <div class="button div9" onclick="sendValue('6')">6</div>
+                        <div class="button div10" onclick="sendValue('*')">x</div>
+                        <div class="button div11" onclick="sendValue('7')">7</div>
+                        <div class="button div12" onclick="sendValue('8')">8</div>
+                        <div class="button div13" onclick="sendValue('9')">9</div>
+                        <div class="button div14" onclick="sendValue('-')">-</div>
+                        <div class="button div15" onclick="sendValue('0')">0</div>
+                        <div class="button div16" onclick="sendValue('00')">00</div>
+                        <div class="button div17" onclick="sendValue('.')">.</div>
+                        <div class="button div18" onclick="sendValue('+')">+</div>
+                        <div class="button div19" onclick="calculate()">=</div>
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
-    <script>
-        alert('hello')
-    </script>
+    <script src="static/javaScript/script.js"></script>
 </body>
 </html>

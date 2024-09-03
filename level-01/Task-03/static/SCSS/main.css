@@ -6,7 +6,7 @@
 }
 
 .container {
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
 
 .calculator {
   background-color: #2196f3;
-  height: 30rem;
+  height: 31rem;
   width: 20rem;
   display: flex;
   align-items: center;
@@ -45,10 +45,14 @@
 .calculator .display input {
   height: 100%;
   width: 100%;
+  border: 0.2rem solid #ff9317;
   border-radius: 1rem;
-  border-color: transparent;
+  outline: none;
   font-size: 2rem;
   padding: 0.2rem 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .calculator .keyboard {
   display: grid;
@@ -59,6 +63,9 @@
   height: 80%;
   width: 100%;
   padding: 0 0 1rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .calculator .keyboard div {
   background-color: #1664c0;
@@ -73,12 +80,21 @@
   color: #f5f8f6;
   border-radius: 1rem;
 }
+.calculator .keyboard div:hover {
+  background-color: #004a9f;
+}
+.calculator .keyboard div:active {
+  color: #00e84d;
+}
 .calculator .keyboard .div1 {
   grid-column: 1/3;
   grid-row: 1/2;
   height: 3rem;
   width: 78%;
   background-color: #ff9317;
+}
+.calculator .keyboard .div1:hover {
+  background-color: #e77b00;
 }
 .calculator .keyboard .div2 {
   grid-column: 3/5;
@@ -87,10 +103,19 @@
   width: 78%;
   background-color: #ff9317;
 }
+.calculator .keyboard .div2:hover {
+  background-color: #e77b00;
+}
+.calculator .keyboard .div2:active {
+  color: #ff0100;
+}
 .calculator .keyboard .div19 {
   grid-column: 1/5;
   grid-row: 6/7;
   height: 3rem;
   width: 91%;
   background-color: #ff9317;
+}
+.calculator .keyboard .div19:hover {
+  background-color: #e77b00;
 }/*# sourceMappingURL=main.css.map */
