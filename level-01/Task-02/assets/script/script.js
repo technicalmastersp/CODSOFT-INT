@@ -14,3 +14,13 @@ const hide = menuTab.addEventListener("click", function() {
         navBar.style.display = 'none'
     }
 })
+
+function hideByNavLi(){
+    if(menuTab.innerHTML === 'menu'){
+        menuTab.innerHTML = 'close';
+        navBar.style.display = 'inline'
+    } else if(menuTab.innerHTML === 'close' ) {
+        menuTab.innerHTML = 'menu';
+        navBar.style.display = 'none'
+    }
+}
